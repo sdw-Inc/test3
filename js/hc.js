@@ -28,3 +28,9 @@ $(function() {
         $(this).find('.post').slideToggle();
     });
 });
+
+function nvtoggle() {
+    $(this).next().slideToggle(300);
+}
+ 
+$(".navToggle").click(nvtoggle);

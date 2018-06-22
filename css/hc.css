@@ -4,16 +4,16 @@
 body
 {
   color:#2c3e50;
-  background-color:#f0f0f0;
+  background-color:#fff;
   width:100%;
-  border-top:solid #d90006;
+  border-top:solid #28bcb6;
   border-width:4px
 }
 
 h1,h2,h3,h4,h5,h6
 {
   font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
-  color:#d90006
+  color:#28bcb6
 }
 
 h1
@@ -98,7 +98,7 @@ p
   overflow-y:auto;
   z-index:1000;
   margin-top:-4px;
-  border-top:solid #d90006;
+  border-top:solid #28bcb6;
   transition:all .4s ease 0;
   border-width:4px
 }
@@ -157,7 +157,7 @@ p
 
 .nav-toggle {
     display: none;
-    color: #d90006;
+    color: #28bcb6;
     padding-left: 10px;
     padding-top: 10px;
   }
@@ -173,7 +173,7 @@ p
 
 .brand:hover
 {
-  color:#d90006;
+  color:#28bcb6;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -207,8 +207,8 @@ p
 
 blockquote
 {
-  border-left:2px solid #d90006;
-  border-right:2px solid #d90006;
+  border-left:2px solid #28bcb6;
+  border-right:2px solid #28bcb6;
   margin-left:-40px;
   margin-right:-40px;
   padding-left:40px;
@@ -292,7 +292,7 @@ pre
 {
   font-size:3em;
   font-weight:700;
-  color:#d90006;
+  color:#28bcb6;
   line-height:130%
 }
 
@@ -316,7 +316,7 @@ pre
 #welcome-greeting h2 a
 {
   font-weight:100;
-  color:#d90006
+  color:#28bcb6
 }
 
 .credit
@@ -370,7 +370,7 @@ pre
 {
   font-size:35px;
   font-weight:700;
-  color:#d90006;
+  color:#28bcb6;
   padding-top:15px
 }
 
@@ -552,7 +552,7 @@ time
   font-weight:bolder;
   font-size:2.5em;
   line-height:55px;
-  color:#d90006
+  color:#28bcb6
 }
 
 .user-card p
@@ -689,11 +689,11 @@ time
 
 #wrapper {
   padding-left: 0;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 
 #sidebar-wrapper {
-    border-right: 4px solid #d90006;
+    border-right: 4px solid #28bcb6;
     border-top: none;
     left: 0px;
 }
@@ -720,6 +720,10 @@ time
   display: inherit;
   background-color: #ededed;
   margin-top: -20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 }
@@ -751,4 +755,11 @@ time
   font-size: small;
 }
 
+}
+
+
+
+
+.child {
+	display: none;
 }
