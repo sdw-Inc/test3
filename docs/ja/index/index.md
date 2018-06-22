@@ -18,6 +18,7 @@
 [免責事項 | Disclaimer of Liability](https://www.google.co.jp/)
 [1．要約 ｜ Executive Summary](https://www.google.co.jp/)
 [### 2．イントロダクション ｜ Introduction]({{ site.baseurl }}/docs/ja/02_introduction/)
+### [2．イントロダクション ｜ Introduction]({{ site.baseurl }}/docs/ja/02_introduction/)
 [](https://www.google.co.jp/)
 [](https://www.google.co.jp/)
 [](https://www.google.co.jp/)
