@@ -14,7 +14,6 @@ disqus: modl_admin
 
 
 highlighter: rouge
-markdown: redcarpet
 redcarpet:
   extensions: ["tables"]
 
