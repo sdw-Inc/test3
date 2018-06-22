@@ -5,9 +5,7 @@
 ##### 見出し5
 ###### 見出し6
 
-> 引用  
-> 引用
->> 多重引用
+> 引用文
 
 print 'hoge'
 
@@ -47,3 +45,8 @@ hoge
 |1 |2 |3 |
 |4 |5 |6 |
 
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
