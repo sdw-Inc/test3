@@ -66,7 +66,7 @@ p
 
 .container a
 {
-  border-bottom:1px #8a8a8a dotted;
+  /* border-bottom:1px #8a8a8a dotted; */
   text-decoration:none
 }
 
@@ -167,7 +167,7 @@ p
   font-weight:800;
   color:#6c7077;
   font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans Japanese",Meiryo,"Yu Gothic Medium",sans-serif;
-  font-size:1.4em;
+  font-size:2rem;
   text-shadow:1px 1px #fff
 }
 

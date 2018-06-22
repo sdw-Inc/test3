@@ -2,12 +2,12 @@ name: MODULE White Paper
 author: MODULE
 baseurl: /
 description: Cryptoeconomic ecosystem on a decentralized file storage network.
-github: http://www.github.com/arnp
-twitter: http://www.twitter.com/
-facebook: http://www.facebook.com
-linkedin: http://www.linkedin.com
-email: rnpatel[at]me.com
-location: 42°2'16"N   70°12'47"W
+github: https://github.com/module-project/
+twitter: https://twitter.com/MODULE_Project
+facebook: https://www.facebook.com/moduleproject/
+linkedin: https://www.linkedin.com/company/module-mdl/
+email: modlsupport[at]modltoken.io
+location: 22°17'58.3"N   114°10'04.5"E
 disqus: modl_admin
 
 ##Make sure to edit the above fields, especially for disqus.
