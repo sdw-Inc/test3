@@ -1,4 +1,4 @@
-# MODULE WhitePaper
+# MODULE YellowPaper
 
 <img src="{{ site.baseurl }}/images/top.jpg" alt="" />
 
