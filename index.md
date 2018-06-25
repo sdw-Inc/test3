@@ -2,4 +2,4 @@
 
 <img src="{{ site.baseurl }}/images/top.jpg" alt="" />
 
-[Markdown StyleCheck]({{ site.baseurl }}/__markdown/)
+[Markdown StyleCheck]({{ site.baseurl }}/markdown/)
