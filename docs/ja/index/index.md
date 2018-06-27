@@ -296,7 +296,7 @@ PoSTT ブロックチェーンは既存のクラウドサーバーをブロッ�
 
 PoSTT ブロックチェーンの基本構造に対する説明
 
-![MODULE]({{ site.baseurl }}/images/index_img05.jpg)
+![IMG05]({{ site.baseurl }}/images/index_img05.jpg)
 
 PoSTT ブロックのチェーンに参加するノードは次のとおりである。
 
@@ -316,13 +316,13 @@ Verifier はデータを保管する費用をこのコインで支払い、Farme
 つまりブロックチェーンはコインの送受信のトランザクションとデータ情報の管理と関連したスマートコントラクトを保管することになる。  
 このために Farmer はスマートコントラクトに対するトークンのアドレスを持っている。またブロックチェーンとは別に Bridge サーバーが存在する。  
 Bridge サーバーはブロックチェーンと現在の P2P ネットを監視し、Verifier から依頼されたデータをどの Farmer に保管させるかどうかを決定して Verifier に知らせてくれる中継者の役割をする。  
-![MODULE]({{ site.baseurl }}/images/index_img06.jpg)
+![IMG06]({{ site.baseurl }}/images/index_img06.jpg)
 
 3. またブロックチェーンを維持する Miner が存在する。  
 Miner は生成されるコインのトランザクションとデータのアップロード、ダウンロードと関連したスマートコントラクトの内容を検査してブロックを生成する役割を遂行する。  
 Miner は Farmer の報酬支払いの計算ロジックを実装して当該ブロックが生成される時に
 Farmer にコインを発行してくれる。  
-![MODULE]({{ site.baseurl }}/images/index_img07.jpg)
+![IMG07]({{ site.baseurl }}/images/index_img07.jpg)
 
 4. Bridge サーバー（以下、Bridge という）  
 Bridge は Farmer と Verifier 間の連結を結んでくれる役割をする。  
@@ -332,7 +332,8 @@ Bridge は API を提供することで、他のブロックチェーン開発�
 開発者はこの API を利用して、現在のブロックチェーンの状態などを確認することができ、また PoSTT ブロックチェーンを利用する多様なプログラムの開発をすることが可能となる。  
 このほかに Bridge ではファイルの状態、Farmer の選択基準をどのように定めるかなどのアルゴリズムを含んでいる。  
 また Merkle Tree の機能でファイルの正確性の検証と Farmer-Verifier 間の相互信頼の方式を設立することになる。  
-これに対する具体的な理論はここで説明しないことにする。
+これに対する具体的な理論はここで説明しないことにする。  
+![IMG08]({{ site.baseurl }}/images/index_img08.jpg)
 
 ### 4.6 PoSTT の報酬方式とデータのアップロード及びダウンロードの流れ
 PoSTT ブロックチェーンの報酬方式は次のとおりである。
@@ -356,7 +357,7 @@ Bridge は Farmer がデータを正確に保管したかどうかを常に監�
 
 Farmer はそれ以降 Farmer に保管されたデータのサイズ、保管されたデータの時間、データのトランザクション量に応じて報酬を受けることになる。
 
-![MODULE]({{ site.baseurl }}/images/index_img08.jpg)
+![IMG09]({{ site.baseurl }}/images/index_img09.jpg)
 
 ##### データのダウンロードの流れ
 Verifier はデータを保管する時に Bridge から受けた破片データに対する情報からダウンロードするためのデータの情報を取得する。
@@ -367,7 +368,7 @@ Verifier は、このデータの情報を利用してダウンロードする�
 
 Verifier は IP アドレスとトークンを利用して Farmer から破片データをダウンロードして結合した後、データを復号しそのデータからオリジナルのデータを取得する。
 
-![MODULE]({{ site.baseurl }}/images/index_img09.jpg)
+![IMG10]({{ site.baseurl }}/images/index_img10.jpg)
 
 ### 4.7 PoSTT の Gas と手数料について
 PoSTT ブロックチェーンで処理される全てのトランザクションとスマートコントラクトは全てスクリプトと見ることができる。
@@ -400,7 +401,7 @@ Gas がない時、すなわちオペコードを実行するために費用が�
 
 1gwei は 10 の 9 乗 Wei を意味する。
 
-![MODULE]({{ site.baseurl }}/images/index_img10.jpg)
+![IMG11]({{ site.baseurl }}/images/index_img11.jpg)
 
 Gas Price（ガスプライス）が 20 gwei と仮定する。
 
@@ -420,7 +421,17 @@ Gas Price（ガスプライス）が 20 gwei と仮定する。
 
 次の図が上記の実例を反映したことである。
 
-![MODULE]({{ site.baseurl }}/images/index_img11.jpg)
+![IMG12]({{ site.baseurl }}/images/index_img12.jpg)
+
+上記の実例では、ユーザーが GasLimit を 250 個に設定してトランザクションを発生させて実際に必要なガスが 250 を超過しない場合である。
+
+しかしトランザクションのために、実際に必要なガスがユーザーが設定した GasLimit を超過する
+場合もある。もしユーザーがトランザクションのために GasLimit は 250 に設定したが、実際に必要なガスは 250 を超過すると仮定する。
+
+このような場合トランザクションは実行されずに終わることになり、送信者（トランザクションを
+生成したユーザー）には 250 ガスに該当したコインが変換さることはない。
+
+![IMG13]({{ site.baseurl }}/images/index_img13.jpg)
 
 そしてここで考慮しなければならない問題点がもう一つある。Miner に対する補償問題である。
 
