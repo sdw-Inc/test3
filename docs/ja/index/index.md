@@ -296,7 +296,7 @@ PoSTT ブロックチェーンは既存のクラウドサーバーをブロッ�
 
 PoSTT ブロックチェーンの基本構造に対する説明
 
-![MODULE]({{ site.baseurl }}/images/logo.png)
+![MODULE]({{ site.baseurl }}/images/index_img05.jpg)
 
 PoSTT ブロックのチェーンに参加するノードは次のとおりである。
 
@@ -316,13 +316,13 @@ Verifier はデータを保管する費用をこのコインで支払い、Farme
 つまりブロックチェーンはコインの送受信のトランザクションとデータ情報の管理と関連したスマートコントラクトを保管することになる。  
 このために Farmer はスマートコントラクトに対するトークンのアドレスを持っている。またブロックチェーンとは別に Bridge サーバーが存在する。  
 Bridge サーバーはブロックチェーンと現在の P2P ネットを監視し、Verifier から依頼されたデータをどの Farmer に保管させるかどうかを決定して Verifier に知らせてくれる中継者の役割をする。  
-![MODULE]({{ site.baseurl }}/images/logo.png)
+![MODULE]({{ site.baseurl }}/images/index_img06.jpg)
 
 3. またブロックチェーンを維持する Miner が存在する。  
 Miner は生成されるコインのトランザクションとデータのアップロード、ダウンロードと関連したスマートコントラクトの内容を検査してブロックを生成する役割を遂行する。  
 Miner は Farmer の報酬支払いの計算ロジックを実装して当該ブロックが生成される時に
 Farmer にコインを発行してくれる。  
-![MODULE]({{ site.baseurl }}/images/logo.png)
+![MODULE]({{ site.baseurl }}/images/index_img07.jpg)
 
 4. Bridge サーバー（以下、Bridge という）  
 Bridge は Farmer と Verifier 間の連結を結んでくれる役割をする。  
@@ -356,7 +356,7 @@ Bridge は Farmer がデータを正確に保管したかどうかを常に監�
 
 Farmer はそれ以降 Farmer に保管されたデータのサイズ、保管されたデータの時間、データのトランザクション量に応じて報酬を受けることになる。
 
-![MODULE]({{ site.baseurl }}/images/logo.png)
+![MODULE]({{ site.baseurl }}/images/index_img08.jpg)
 
 ##### データのダウンロードの流れ
 Verifier はデータを保管する時に Bridge から受けた破片データに対する情報からダウンロードするためのデータの情報を取得する。
@@ -367,7 +367,7 @@ Verifier は、このデータの情報を利用してダウンロードする�
 
 Verifier は IP アドレスとトークンを利用して Farmer から破片データをダウンロードして結合した後、データを復号しそのデータからオリジナルのデータを取得する。
 
-![MODULE]({{ site.baseurl }}/images/logo.png)
+![MODULE]({{ site.baseurl }}/images/index_img09.jpg)
 
 ### 4.7 PoSTT の Gas と手数料について
 PoSTT ブロックチェーンで処理される全てのトランザクションとスマートコントラクトは全てスクリプトと見ることができる。
@@ -400,7 +400,7 @@ Gas がない時、すなわちオペコードを実行するために費用が�
 
 1gwei は 10 の 9 乗 Wei を意味する。
 
-![MODULE]({{ site.baseurl }}/images/logo.png)
+![MODULE]({{ site.baseurl }}/images/index_img10.jpg)
 
 Gas Price（ガスプライス）が 20 gwei と仮定する。
 
@@ -420,7 +420,7 @@ Gas Price（ガスプライス）が 20 gwei と仮定する。
 
 次の図が上記の実例を反映したことである。
 
-![MODULE]({{ site.baseurl }}/images/logo.png)
+![MODULE]({{ site.baseurl }}/images/index_img11.jpg)
 
 そしてここで考慮しなければならない問題点がもう一つある。Miner に対する補償問題である。
 
